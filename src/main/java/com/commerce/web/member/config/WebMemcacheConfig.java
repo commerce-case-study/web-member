@@ -1,4 +1,4 @@
-package com.metranet.finbox.app.config;
+package com.commerce.web.member.config;
 
 import java.util.Arrays;
 

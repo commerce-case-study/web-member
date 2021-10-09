@@ -1,4 +1,4 @@
-package com.metranet.finbox.lib;
+package com.commerce.web.member.dto;
 
 import java.util.Arrays;
 

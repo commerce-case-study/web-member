@@ -1,4 +1,4 @@
-package com.metranet.finbox.app.member.service;
+package com.commerce.web.member.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.metranet.finbox.app.member.dto.MemberDto;
+import com.commerce.web.member.dto.MemberDto;
 
 @FeignClient(name = MemberService.SERVICE_NAME)
 public interface MemberService {

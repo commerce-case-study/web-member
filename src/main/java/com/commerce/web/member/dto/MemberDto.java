@@ -1,4 +1,4 @@
-package com.metranet.finbox.app.member.dto;
+package com.commerce.web.member.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;

@@ -1,4 +1,4 @@
-package com.metranet.finbox.app.config.exception;
+package com.commerce.web.member.config.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.client.HttpStatusCodeException;

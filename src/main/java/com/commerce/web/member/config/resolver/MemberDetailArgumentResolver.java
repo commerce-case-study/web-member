@@ -1,4 +1,4 @@
-package com.metranet.finbox.app.config.resolver;
+package com.commerce.web.member.config.resolver;
 
 import java.util.Base64;
 
@@ -14,8 +14,8 @@ import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
 
+import com.commerce.web.member.dto.MemberDetail;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.metranet.finbox.lib.MemberDetail;
 
 import lombok.extern.slf4j.Slf4j;
 

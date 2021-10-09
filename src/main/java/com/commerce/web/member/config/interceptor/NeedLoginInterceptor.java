@@ -1,4 +1,4 @@
-package com.metranet.finbox.app.config.interceptor;
+package com.commerce.web.member.config.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-import com.metranet.finbox.app.config.annotation.NeedLogin;
-import com.metranet.finbox.app.config.exception.MemberUnauthorizedException;
+import com.commerce.web.member.config.annotation.NeedLogin;
+import com.commerce.web.member.config.exception.MemberUnauthorizedException;
 
 @Component
 public class NeedLoginInterceptor implements HandlerInterceptor {

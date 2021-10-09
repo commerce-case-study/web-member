@@ -1,4 +1,4 @@
-package com.metranet.finbox.app.config.annotation;
+package com.commerce.web.member.config.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;

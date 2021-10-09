@@ -1,4 +1,4 @@
-package com.metranet.finbox.app.member.api;
+package com.commerce.web.member.api;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.metranet.finbox.app.config.annotation.NeedLogin;
-import com.metranet.finbox.app.member.dto.MemberDto;
-import com.metranet.finbox.app.member.service.MemberService;
-import com.metranet.finbox.lib.MemberDetail;
-import com.metranet.finbox.lib.common.JsonConverterUtil;
+import com.commerce.lib.JsonConverterUtil;
+import com.commerce.web.member.config.annotation.NeedLogin;
+import com.commerce.web.member.dto.MemberDetail;
+import com.commerce.web.member.dto.MemberDto;
+import com.commerce.web.member.service.MemberService;
 
 @RestController
 @RequestMapping("/api/microsite/member")
