@@ -8,3 +8,12 @@ eureka:
     register-with-eureka: true
     serviceUrl:
       defaultZone: http://discovery-service.prod/eureka
+
+#redis
+spring:
+  cache:
+    type: redis
+  redis:
+    database: 0
+    host: redis-server.prod
+    port: 6379

@@ -1,6 +1,6 @@
 # Server
 server:
-  port: 8001
+  port: 7001
 
 # Eureka Discovery Client Consumer
 eureka:
@@ -8,3 +8,12 @@ eureka:
     register-with-eureka: true
     serviceUrl:
       defaultZone: http://localhost:8103/eureka
+
+#redis
+spring:
+  cache:
+    type: redis
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
