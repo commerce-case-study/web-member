@@ -2,11 +2,7 @@ package com.commerce.web.member.config.resolver;
 
 import java.util.Base64;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.core.MethodParameter;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.support.WebDataBinderFactory;
@@ -23,8 +19,6 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 public class MemberDetailArgumentResolver implements HandlerMethodArgumentResolver {
     
-	Logger logger = LoggerFactory.getLogger(MemberDetailArgumentResolver.class);
-
     @Override
     public boolean supportsParameter(MethodParameter parameter) {
         return parameter.getParameter().getType() == MemberDetail.class;
@@ -49,7 +43,7 @@ public class MemberDetailArgumentResolver implements HandlerMethodArgumentResolv
         try {
             return new String(Base64.getDecoder().decode(decodedJwt));
         } catch (Exception e) {
-            logger.error("Error", e);
+            log.error("Error", e);
         }
         return "";
     }
@@ -69,7 +63,7 @@ public class MemberDetailArgumentResolver implements HandlerMethodArgumentResolv
         try {
             memberDetail = new ObjectMapper().readValue(content, MemberDetail.class);
         }catch (Exception e) {
-            logger.error("Error", e);
+            log.error("Error", e);
         }
         return memberDetail;
     }
